@@ -1,0 +1,32 @@
+img {
+    width:30%;
+    margin: 10px;
+    /* border-width: 10px;
+    border-color: white; */
+    /* border:10px solid white; */
+    /* border-radius: 50%;
+    border-style: solid; */
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+.ab-main {
+    background-color: #283316;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 1%; */
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.ab-text {
+    width: 30%;
+    margin-top: 5%;
+}
+.ab-buttons {
+    margin-top: 5%;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
