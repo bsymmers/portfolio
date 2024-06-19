@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Heading, Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react'
 import './nav.css'
+import { Link } from 'react-router-dom'
 function Nav() {
   return (
     <div className='navbar'>
@@ -8,8 +9,10 @@ function Nav() {
         Brandon Symmers
       </Heading>
       <Breadcrumb>
-        <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink href='#'>Home</BreadcrumbLink>
+        <BreadcrumbItem>
+          <BreadcrumbLink as={Link} to='/'>
+            Home
+          </BreadcrumbLink>
         </BreadcrumbItem>
 
         <BreadcrumbItem>
@@ -17,7 +20,9 @@ function Nav() {
         </BreadcrumbItem>
 
         <BreadcrumbItem>
-          <BreadcrumbLink href='#'>Film</BreadcrumbLink>
+          <BreadcrumbLink as={Link} to='film'>
+            Film
+          </BreadcrumbLink>
         </BreadcrumbItem>
 
         <BreadcrumbItem>
