@@ -5,9 +5,9 @@ import Nav from './components/nav'
 import About from './components/about'
 import Film from './components/film'
 // import theme from './theme'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { FaRegHeart } from 'react-icons/fa'
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: (
