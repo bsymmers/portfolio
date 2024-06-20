@@ -19,12 +19,11 @@ function Film() {
   }
 
   const fetchMoreData = () => {
-    if (images.items.length > 45) {
-      setImages({ items: images.items, hasMore: false })
-      console.log(images)
+    const res = addImages(images.items.length)
+    if (images.items.length == 48) {
+      setImages({ items: res, hasMore: false })
     } else {
-      setImages({ items: addImages(images.items.length), hasMore: true })
-      console.log(images)
+      setImages({ items: res, hasMore: true })
     }
   }
   return (
