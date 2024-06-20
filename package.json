@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://bsymmers.github.io",
+  "homepage": "https://bsymmers.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
@@ -29,7 +29,7 @@
     "lint": "eslint  --fix src/**/*.js",
     "format": "prettier src/**/*.js --write. --config ./.prettierrc",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
