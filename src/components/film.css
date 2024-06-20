@@ -1,0 +1,11 @@
+.image-item {
+    display: flex;
+    width: 40%;
+    margin: 1%;
+}
+
+InfiniteScroll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

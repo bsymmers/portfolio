@@ -30,7 +30,7 @@ function About() {
         </div>
       </div>
       {/* <Box boxSize='sm'> */}
-      <Image src={headshot} alt='Brandon Symmers' border='10px solid white' />
+      <Image className='headshot' src={headshot} alt='Brandon Symmers' border='10px solid white' />
       {/* </Box> */}
     </div>
   )
