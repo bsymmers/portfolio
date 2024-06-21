@@ -16,11 +16,13 @@ function Nav() {
         </BreadcrumbItem>
 
         <BreadcrumbItem>
-          <BreadcrumbLink href='#'>Projects</BreadcrumbLink>
+          <BreadcrumbLink as={Link} to='/tech'>
+            Tech
+          </BreadcrumbLink>
         </BreadcrumbItem>
 
         <BreadcrumbItem>
-          <BreadcrumbLink as={Link} to='film'>
+          <BreadcrumbLink as={Link} to='/film'>
             Film
           </BreadcrumbLink>
         </BreadcrumbItem>

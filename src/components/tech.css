@@ -1,0 +1,22 @@
+.tech-main {
+    display: flex;
+    width: 100%;
+    min-height: 85%;
+    /* margin-top: 1%; */
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.tech-text {
+    width: 30%;
+    /* margin-top: 5%; */
+}
+
+.tech-buttons {
+    margin-top: 5%;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

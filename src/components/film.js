@@ -3,6 +3,7 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 import { useState } from 'react'
 import { Image } from '@chakra-ui/react'
 import './film.css'
+import Nav from './nav'
 
 function Film() {
   function importAll(r) {
@@ -27,19 +28,22 @@ function Film() {
     }
   }
   return (
-    <InfiniteScroll
-      dataLength={images.items.length}
-      next={fetchMoreData}
-      hasMore={images.hasMore} // Change this to false when all images are loaded
-      loader={<h4>Loading...</h4>}
-      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
-    >
-      {images.items.map((image, index) => (
-        <div key={index} className='image-item'>
-          <Image src={image} alt={`Image ${index}`} />
-        </div>
-      ))}
-    </InfiniteScroll>
+    <>
+      <Nav />
+      <InfiniteScroll
+        dataLength={images.items.length}
+        next={fetchMoreData}
+        hasMore={images.hasMore} // Change this to false when all images are loaded
+        loader={<h4>Loading...</h4>}
+        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+      >
+        {images.items.map((image, index) => (
+          <div key={index} className='image-item'>
+            <Image src={image} alt={`Image ${index}`} />
+          </div>
+        ))}
+      </InfiniteScroll>
+    </>
   )
 }
 

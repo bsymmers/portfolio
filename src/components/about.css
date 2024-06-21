@@ -30,3 +30,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
+TabPanel {
+    display: flex;
+    justify-content: space-between;
+}

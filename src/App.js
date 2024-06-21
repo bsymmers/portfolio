@@ -1,28 +1,24 @@
 import * as React from 'react'
 import './App.css'
 import { Icon, Text } from '@chakra-ui/react'
-import Nav from './components/nav'
 import About from './components/about'
 import Film from './components/film'
 // import theme from './theme'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { FaRegHeart } from 'react-icons/fa'
+import Tech from './components/tech'
 const router = createHashRouter([
   {
     path: '/',
-    element: (
-      <>
-        <Nav /> <About />
-      </>
-    )
+    element: <About />
   },
   {
-    path: 'film',
-    element: (
-      <>
-        <Nav /> <Film />
-      </>
-    )
+    path: '/film',
+    element: <Film />
+  },
+  {
+    path: '/tech',
+    element: <Tech />
   }
 ])
 
