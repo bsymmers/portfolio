@@ -7,6 +7,7 @@ import Nav from './nav'
 import pdf from '../media/cv.pdf'
 import './tech.css'
 import AboutTech from './about-tech'
+import ContactCard from './contact-card'
 
 function Tech() {
   return (
@@ -25,9 +26,7 @@ function Tech() {
             A new graduate from the University of British Columbia passionate about implementing front and backend infrastructure.
           </Text>
           <Stack direction='row' spacing={4} align='center' marginTop='2%'>
-            <Button variant='solid' background='#283316' color='white'>
-              Hire me!
-            </Button>
+            <ContactCard />
             <a href={pdf}>
               <Button rightIcon={<FiDownload />} variant='outline' borderColor='#283316'>
                 Download CV
