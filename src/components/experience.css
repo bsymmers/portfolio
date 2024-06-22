@@ -1,0 +1,23 @@
+.experience-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #283316;
+}
+
+.experience-text {
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experience-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+
+/* .pic-dimensions {
+    max-width: 20%;
+} */

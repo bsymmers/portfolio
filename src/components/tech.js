@@ -8,6 +8,7 @@ import pdf from '../media/cv.pdf'
 import './tech.css'
 import AboutTech from './about-tech'
 import ContactCard from './contact-card'
+import Experience from './experience'
 
 function Tech() {
   return (
@@ -34,10 +35,10 @@ function Tech() {
             </a>
           </Stack>
         </div>
-
         <Image className='headshot' src={headshot} alt='Brandon Symmers' border='10px solid white' />
       </div>
       <AboutTech />
+      <Experience />
     </>
   )
 }
