@@ -5,24 +5,6 @@ import Procurify from '../media/procurify_logo.jpg'
 import Philips from '../media/philips-logo.jpg'
 import JobDrawer from './job-drawer'
 function ExperienceCard() {
-  //   const procurifyDecs =
-  //     '• Implemented a microservice and its subsequent REST API which facilitated the syncing of bills from our native app to Netsuite, allowing the company to greatly expand their customer base to include Netsuite customers' +
-  //     '• Optimized existing Terraform infrastructure to reduce code duplication and costs of unused AWS services while provisioning new AWS services to better suite our needs' +
-  //     '• Spearheaded the transition away from hashicorp vault to AWS Secrets manager, accordingly updating all environment variables in our codebase to reflect these changes' +
-  //     '• Launched a proof of concept testing the feasability of replacing Terraform with AWS CDK aiming to explore the possibility for developers to provision their own infrastructure without outside DevOps support'
-  //   const philipsDecs =
-  //     '• Automated the process of onboarding / offboarding through building a full-stack web application that gave / withdrew access to different services such as AWS IAM, Slack, Jira' +
-  //     '• Refactored/maintained Bamboo CI/CD pipelines, whilst working with development teams to create new ones depending on their needs, thus reducing their time dedicated to deployment' +
-  //     '    • Supported software development teams through any server side complications & actively partook in their agile development processes'
-  //   //   const getCompany = (n) => {
-  //     if (n == 'Procurify') {
-  //       //   imgWidth = '90%'
-  //       return Procurify
-  //     } else {
-  //       //   imgWidth = '90%'
-  //       return Philips
-  //     }
-  //   }
   return (
     <SimpleGrid spacing={20} templateColumns='1fr 1fr'>
       <Card>

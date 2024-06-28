@@ -9,6 +9,7 @@ import './tech.css'
 import AboutTech from './about-tech'
 import ContactCard from './contact-card'
 import Experience from './experience'
+import Projects from './projects'
 
 function Tech() {
   return (
@@ -39,6 +40,7 @@ function Tech() {
       </div>
       <AboutTech />
       <Experience />
+      <Projects />
     </>
   )
 }

@@ -6,7 +6,7 @@ function PhilipsList() {
     <UnorderedList spacing={4}>
       <ListItem>
         Automated the process of onboarding / offboarding through building a full-stack web application that gave / withdrew access to
-        different services such as AWS IAM, Slack, Jirat
+        different services such as AWS IAM, Slack, Jira
       </ListItem>
       <ListItem>
         Refactored/maintained Bamboo CI/CD pipelines, whilst working with development teams to create new ones depending on their needs,
