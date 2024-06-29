@@ -1,9 +1,9 @@
 import * as React from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import { useState } from 'react'
-import { Image } from '@chakra-ui/react'
 import './film.css'
 import Nav from './nav'
+import { motion } from 'framer-motion'
 
 function Film() {
   function importAll(r) {
@@ -39,7 +39,7 @@ function Film() {
       >
         {images.items.map((image, index) => (
           <div key={index} className='image-item'>
-            <Image src={image} alt={`Image ${index}`} />
+            <motion.img src={image} alt={`Image ${index}`} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} />
           </div>
         ))}
       </InfiniteScroll>

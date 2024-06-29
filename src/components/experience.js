@@ -2,9 +2,11 @@ import * as React from 'react'
 import './experience.css'
 import { Text } from '@chakra-ui/react'
 import ExperienceCard from './experience-card'
+import { motion } from 'framer-motion'
+
 function Experience() {
   return (
-    <div className='experience-wrap'>
+    <motion.div className='experience-wrap' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <div className='experience-text'>
         <Text fontSize='lg' color='white'>
           Work Experience
@@ -20,7 +22,7 @@ function Experience() {
         <ExperienceCard name='Procurify' dates='January 2022 - August 2022' title='Backend Software Engineer' />
         {/* <ExperienceCard name='Philips Healthtech' dates='May 2021 - December 2021' title='DevOps Engineer' /> */}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

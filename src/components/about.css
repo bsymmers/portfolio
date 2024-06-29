@@ -8,6 +8,10 @@
     border-style: solid; */
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
+    /* border-width: 100px;
+    border: solid;
+    border-color: white; */
+    border:10px solid white
 }
 .ab-main {
     background-color: #283316;

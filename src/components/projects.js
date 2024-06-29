@@ -5,6 +5,7 @@ import CognateTranslator from '../media/ct-logo.png'
 import * as React from 'react'
 import './projects.css'
 import { ProjDesc } from './project-descriptions'
+import { motion } from 'framer-motion'
 
 function Projects() {
   const defaultState = { Terrascan: true, 'Cognate Translator': true, Tracer: true, default: true }
@@ -23,7 +24,7 @@ function Projects() {
   }
 
   return (
-    <div className='projects-wrap'>
+    <motion.div className='projects-wrap' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <Text color='grey'>My Projects</Text>
       <Heading>Presenting a Mix of my Personal & Academic Projects</Heading>
       <SimpleGrid
@@ -64,7 +65,7 @@ function Projects() {
       {!selectedProject['default'] && selectedProject['Cognate Translator'] ? <ProjDesc proj='Ct' /> : null}
 
       {!selectedProject['default'] && selectedProject['Tracer'] ? <ProjDesc proj='Ro' /> : null}
-    </div>
+    </motion.div>
   )
 }
 
