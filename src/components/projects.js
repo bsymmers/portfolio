@@ -4,21 +4,21 @@ import Tracer from '../media/ro-logo.png'
 import CognateTranslator from '../media/ct-logo.png'
 import * as React from 'react'
 import './projects.css'
-import { TerrascanDesc } from './project-descriptions'
+import { ProjDesc } from './project-descriptions'
 
 function Projects() {
-  const defaultState = { Terrascan: 'inline', 'Cognate Translator': 'inline', Tracer: 'inline', default: true }
+  const defaultState = { Terrascan: true, 'Cognate Translator': true, Tracer: true, default: true }
   const [selectedProject, setSelectedProject] = React.useState(defaultState)
 
   const handleSelect = (e) => {
-    if (!selectedProject['default'] && selectedProject[e.target.alt] == 'inline') {
+    if (!selectedProject['default'] && selectedProject[e.target.alt]) {
       setSelectedProject(defaultState)
     } else if (e.target.alt == 'Terrascan') {
-      setSelectedProject({ Terrascan: 'inline', 'Cognate Translator': 'none', Tracer: 'none', default: false })
+      setSelectedProject({ Terrascan: true, 'Cognate Translator': false, Tracer: false, default: false })
     } else if (e.target.alt == 'Cognate Translator') {
-      setSelectedProject({ Terrascan: 'none', 'Cognate Translator': 'inline', Tracer: 'none', default: false })
+      setSelectedProject({ Terrascan: false, 'Cognate Translator': true, Tracer: false, default: false })
     } else {
-      setSelectedProject({ Terrascan: 'none', 'Cognate Translator': 'none', Tracer: 'inline', default: false })
+      setSelectedProject({ Terrascan: false, 'Cognate Translator': false, Tracer: true, default: false })
     }
   }
 
@@ -29,6 +29,7 @@ function Projects() {
       <SimpleGrid
         justifyItems='center'
         marginTop='2%'
+        marginBottom='2%'
         width='50%'
         alignContent='space-around'
         spacing={4}
@@ -40,7 +41,7 @@ function Projects() {
           boxSize='230px'
           alt='Terrascan'
           onClick={handleSelect}
-          display={selectedProject['Terrascan']}
+          opacity={selectedProject['Terrascan'] ? 1 : 0.5}
         />
         <Image
           className='projectImg'
@@ -48,7 +49,7 @@ function Projects() {
           boxSize='230px'
           alt='Cognate Translator'
           onClick={handleSelect}
-          display={selectedProject['Cognate Translator']}
+          opacity={selectedProject['Cognate Translator'] ? 1 : 0.5}
         />
         <Image
           className='projectImg'
@@ -56,10 +57,13 @@ function Projects() {
           boxSize='230px'
           alt='Tracer'
           onClick={handleSelect}
-          display={selectedProject['Tracer']}
+          opacity={selectedProject['Tracer'] ? 1 : 0.5}
         />
       </SimpleGrid>
-      {!selectedProject['default'] && selectedProject['Terrascan'] == 'inline' ? <TerrascanDesc /> : null}
+      {!selectedProject['default'] && selectedProject['Terrascan'] ? <ProjDesc proj='Terrascan' /> : null}
+      {!selectedProject['default'] && selectedProject['Cognate Translator'] ? <ProjDesc proj='Ct' /> : null}
+
+      {!selectedProject['default'] && selectedProject['Tracer'] ? <ProjDesc proj='Ro' /> : null}
     </div>
   )
 }

@@ -27,9 +27,9 @@ function App() {
     <div className='App'>
       <RouterProvider router={router}></RouterProvider>
       <div className='footer'>
-        <Text fontSize='xs'>Made with </Text>
-        <Icon as={FaRegHeart}></Icon>
-        <Text fontSize='xs'>by Brandon Symmers</Text>
+        <Text fontSize='xs'>
+          Made with <Icon as={FaRegHeart} verticalAlign='sub'></Icon> by Brandon Symmers{' '}
+        </Text>
       </div>
     </div>
   )

@@ -27,9 +27,9 @@ function Nav() {
           </BreadcrumbLink>
         </BreadcrumbItem>
 
-        <BreadcrumbItem>
+        {/* <BreadcrumbItem>
           <BreadcrumbLink href='#'>Food</BreadcrumbLink>
-        </BreadcrumbItem>
+        </BreadcrumbItem> */}
       </Breadcrumb>
     </div>
   )
