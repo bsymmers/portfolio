@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4f7fd2ef.css",
-    "main.js": "/portfolio/static/js/main.ada05204.js",
+    "main.css": "/portfolio/static/css/main.4b82b356.css",
+    "main.js": "/portfolio/static/js/main.dcde8f7e.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/IMG6.jpg": "/portfolio/static/media/IMG6.cad806f61446d4e65d5e.jpg",
+    "static/media/headshot-tech.jpg": "/portfolio/static/media/headshot-tech.437c930898d61fe2406b.jpg",
     "static/media/headshot.JPG": "/portfolio/static/media/headshot.50a4e2a615fd420c2448.JPG",
     "static/media/IMG7.jpg": "/portfolio/static/media/IMG7.2e5719a0af41d8e41917.jpg",
     "static/media/IMG12.jpg": "/portfolio/static/media/IMG12.791e4cb0ba487d42d718.jpg",
@@ -16,6 +17,7 @@
     "static/media/IMG9.jpg": "/portfolio/static/media/IMG9.a1c524d67d4234963ad0.jpg",
     "static/media/IMG5.jpg": "/portfolio/static/media/IMG5.78a30121eb4810a363cb.jpg",
     "static/media/IMG111.jpg": "/portfolio/static/media/IMG111.76d76ea9b6083c78d89c.jpg",
+    "static/media/about-tech.jpg": "/portfolio/static/media/about-tech.93f4154a4c03c09a03ec.jpg",
     "static/media/IMG37.jpg": "/portfolio/static/media/IMG37.cf63403837ec003f9589.jpg",
     "static/media/IMG25.jpg": "/portfolio/static/media/IMG25.8daaa02dc0c97f4d1988.jpg",
     "static/media/IMG40.jpg": "/portfolio/static/media/IMG40.9e74aa4b105c4e5bc04b.jpg",
@@ -51,22 +53,29 @@
     "static/media/IMG2.jpg": "/portfolio/static/media/IMG2.7d8b415b2e1e25bcd146.jpg",
     "static/media/IMG112.jpg": "/portfolio/static/media/IMG112.e17f2080ba5fa0519991.jpg",
     "static/media/IMG113.jpg": "/portfolio/static/media/IMG113.d6c543dd8e38933982b1.jpg",
+    "static/media/ct-logo.png": "/portfolio/static/media/ct-logo.a131422fd6886f07f7fd.png",
+    "static/media/Terrascan.png": "/portfolio/static/media/Terrascan.4ce51e910d493bc6d568.png",
+    "static/media/ro-logo.png": "/portfolio/static/media/ro-logo.2121fa1a28612170fbb2.png",
+    "static/media/t-logo.png": "/portfolio/static/media/t-logo.edd1e5aca331d2988e8a.png",
     "static/media/IMG114.jpg": "/portfolio/static/media/IMG114.3fa6b316e39383594179.jpg",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.fa022cd4d6ddfb44cb9e.pdf",
+    "static/media/Cognate-Translator.png": "/portfolio/static/media/Cognate-Translator.fbb7af21c7006287823c.png",
     "static/media/dm-serif-display-latin-400-normal.woff2": "/portfolio/static/media/dm-serif-display-latin-400-normal.918b5997b79b6ebcb2c4.woff2",
     "static/media/dm-serif-display-latin-400-normal.woff": "/portfolio/static/media/dm-serif-display-latin-400-normal.ea5aa693a9b1a7f29da1.woff",
     "static/media/neuton-latin-400-normal.woff2": "/portfolio/static/media/neuton-latin-400-normal.e6246899e071397806fd.woff2",
     "static/media/neuton-latin-400-normal.woff": "/portfolio/static/media/neuton-latin-400-normal.d2979bc99e9014c7101c.woff",
+    "static/media/philips-logo.jpg": "/portfolio/static/media/philips-logo.93d0e03889bfe77434d0.jpg",
     "static/media/dm-serif-display-latin-ext-400-normal.woff2": "/portfolio/static/media/dm-serif-display-latin-ext-400-normal.64b6e114c2d6d3522783.woff2",
     "static/media/dm-serif-display-latin-ext-400-normal.woff": "/portfolio/static/media/dm-serif-display-latin-ext-400-normal.6c1f83bd813cdaeb95dc.woff",
     "static/media/neuton-latin-ext-400-normal.woff2": "/portfolio/static/media/neuton-latin-ext-400-normal.dc554d8b9249a5e29384.woff2",
     "static/media/neuton-latin-ext-400-normal.woff": "/portfolio/static/media/neuton-latin-ext-400-normal.7dea0663a7b91c735834.woff",
     "index.html": "/portfolio/index.html",
-    "main.4f7fd2ef.css.map": "/portfolio/static/css/main.4f7fd2ef.css.map",
-    "main.ada05204.js.map": "/portfolio/static/js/main.ada05204.js.map",
+    "main.4b82b356.css.map": "/portfolio/static/css/main.4b82b356.css.map",
+    "main.dcde8f7e.js.map": "/portfolio/static/js/main.dcde8f7e.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f7fd2ef.css",
-    "static/js/main.ada05204.js"
+    "static/css/main.4b82b356.css",
+    "static/js/main.dcde8f7e.js"
   ]
 }
