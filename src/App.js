@@ -7,22 +7,24 @@ import Film from './components/film'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { FaRegHeart } from 'react-icons/fa'
 import Tech from './components/tech'
-const router = createHashRouter([
-  {
-    path: '/',
-    element: <About />
-  },
-  {
-    path: '/film',
-    element: <Film />
-  },
-  {
-    path: '/tech',
-    element: <Tech />
-  }
-])
+import { useMediaQuery } from 'react-responsive'
 
 function App() {
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 })
+  const router = createHashRouter([
+    {
+      path: '/',
+      element: <About isMobile={isTabletOrMobile} />
+    },
+    {
+      path: '/film',
+      element: <Film isMobile={isTabletOrMobile} />
+    },
+    {
+      path: '/tech',
+      element: <Tech isMobile={isTabletOrMobile} />
+    }
+  ])
   return (
     <div className='App'>
       <RouterProvider router={router}></RouterProvider>

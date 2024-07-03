@@ -37,7 +37,6 @@ function LeftDescCt() {
 function LeftDescRo() {
   return (
     <div className='left-desc'>
-      {/* <Image id='Terrascan-IMG' src={Tracer}></Image> */}
       <iframe
         src='https://drive.google.com/file/d/1oa341JJRY_7ZT6IQ0ygtZhj-emKMs_tT/preview'
         width='640'

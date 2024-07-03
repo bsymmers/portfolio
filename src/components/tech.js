@@ -3,7 +3,7 @@ import * as React from 'react'
 import { Image, Text, Stack, Button } from '@chakra-ui/react'
 import headshot from '../media/headshot-tech.jpg'
 import { FiDownload } from 'react-icons/fi'
-import Nav from './nav'
+import { Nav, NavMobile } from './nav'
 import pdf from '../media/cv.pdf'
 import './tech.css'
 import AboutTech from './about-tech'
@@ -11,18 +11,21 @@ import ContactCard from './contact-card'
 import Experience from './experience'
 import Projects from './projects'
 import { motion } from 'framer-motion'
+import PropTypes from 'prop-types'
 
-function Tech() {
+function Tech({ isMobile }) {
   return (
     <>
-      <Nav />
-      <motion.div className='tech-main' animate={{ x: 100 }} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+      {isMobile ? <NavMobile /> : <Nav />}
+      <motion.div className='tech-main' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <div className='tech-text'>
-          <Text fontSize='4xl' color='grey'>
+          <Text className='tech-text-item' fontSize='4xl' color='grey'>
             Hi! I&apos;m
           </Text>
-          <Text fontSize='4xl'>Brandon Symmers </Text>
-          <Text fontSize='4xl' color='grey'>
+          <Text className='tech-text-item' fontSize='4xl'>
+            Brandon Symmers
+          </Text>
+          <Text className='tech-text-item' fontSize='4xl' color='grey'>
             Full Stack Engineer{' '}
           </Text>
           <Text fontSize='l' color='grey'>
@@ -37,12 +40,23 @@ function Tech() {
             </a>
           </Stack>
         </div>
-        <Image className='headshot' src={headshot} alt='Brandon Symmers' border='10px solid white' />
+        <Image
+          boxSize={isMobile ? 'xs' : 'lg'}
+          className='headshot'
+          src={headshot}
+          alt='Brandon Symmers'
+          border='10px solid white'
+          display='flex'
+        />
       </motion.div>
-      <AboutTech />
+      <AboutTech isMobile={isMobile} />
       <Experience />
       <Projects />
     </>
   )
+}
+
+Tech.propTypes = {
+  isMobile: PropTypes.bool
 }
 export default Tech

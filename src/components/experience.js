@@ -14,14 +14,12 @@ function Experience() {
         <Text fontSize='4xl' color='white'>
           My Past Internships
         </Text>
-        <Text fontSize='sm' color='white'>
+        <Text fontSize='sm' color='white' textAlign='center'>
           I&apos;ve had the opportunity to participate in 2 different full time internships, each being 8 months in duration
         </Text>
       </div>
-      <div className='experience-cards'>
-        <ExperienceCard name='Procurify' dates='January 2022 - August 2022' title='Backend Software Engineer' />
-        {/* <ExperienceCard name='Philips Healthtech' dates='May 2021 - December 2021' title='DevOps Engineer' /> */}
-      </div>
+
+      <ExperienceCard />
     </motion.div>
   )
 }

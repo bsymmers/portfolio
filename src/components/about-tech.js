@@ -18,11 +18,12 @@ import {
 } from 'react-icons/si'
 import { FaGolang } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
+import PropTypes from 'prop-types'
 
-function AboutTech() {
+function AboutTech({ isMobile }) {
   return (
-    <motion.div className='tech-main' animate={{ x: 100 }} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
-      <Image className='headshot' src={headshot} alt='Brandon Symmers' border='10px solid white' />
+    <motion.div className='tech-main' id='ab-tech' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+      <Image boxSize={isMobile ? 'xs' : 'lg'} src={headshot} alt='Brandon Symmers' border='10px solid white' borderRadius='50%' />
       <div className='tech-text '>
         <Text fontSize='lg' color='grey'>
           ABOUT ME
@@ -75,6 +76,9 @@ function AboutTech() {
       </div>
     </motion.div>
   )
+}
+AboutTech.propTypes = {
+  isMobile: PropTypes.bool
 }
 
 export default AboutTech

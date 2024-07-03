@@ -26,7 +26,7 @@ function Projects() {
   return (
     <motion.div className='projects-wrap' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <Text color='grey'>My Projects</Text>
-      <Heading>Presenting a Mix of my Personal & Academic Projects</Heading>
+      <Heading textAlign='center'>Presenting a Mix of my Personal & Academic Projects</Heading>
       <SimpleGrid
         justifyItems='center'
         marginTop='2%'

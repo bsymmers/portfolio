@@ -2,10 +2,11 @@ import * as React from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import { useState } from 'react'
 import './film.css'
-import Nav from './nav'
+import { Nav, NavMobile } from './nav'
 import { motion } from 'framer-motion'
+import PropTypes from 'prop-types'
 
-function Film() {
+function Film({ isMobile }) {
   function importAll(r) {
     return r.keys().map(r)
   }
@@ -29,11 +30,11 @@ function Film() {
   }
   return (
     <>
-      <Nav />
+      {isMobile ? <NavMobile /> : <Nav />}
       <InfiniteScroll
         dataLength={images.items.length}
         next={fetchMoreData}
-        hasMore={images.hasMore} // Change this to false when all images are loaded
+        hasMore={images.hasMore}
         loader={<h4>Loading...</h4>}
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
       >
@@ -47,4 +48,7 @@ function Film() {
   )
 }
 
+Film.propTypes = {
+  isMobile: PropTypes.bool
+}
 export default Film

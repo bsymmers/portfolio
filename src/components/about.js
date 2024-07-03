@@ -5,15 +5,16 @@ import headshot from '../media/headshot.JPG'
 import { FaLinkedin, FaGithub } from 'react-icons/fa6'
 import { MdEmail } from 'react-icons/md'
 import './about.css'
-import Nav from './nav'
+import { Nav, NavMobile } from './nav'
 import { motion } from 'framer-motion'
+import PropTypes from 'prop-types'
 
-function About() {
+function About({ isMobile }) {
   return (
     <>
-      <Nav />
-      <div className='ab-main'>
-        <motion.div className='ab-text' animate={{ x: 100 }}>
+      {isMobile ? <NavMobile /> : <Nav />}
+      <motion.div className='ab-main' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+        <div className='ab-text'>
           <Text fontSize='3xl' color='white'>
             About me
           </Text>
@@ -32,12 +33,15 @@ function About() {
               <Icon as={MdEmail} w={8} h={8} color='white' />
             </a>
           </div>
-        </motion.div>
-        {/* <Box boxSize='sm'> */}
-
-        <motion.img className='headshot' src={headshot} alt='Brandon Symmers' animate={{ x: 100 }} />
-      </div>
+        </div>
+        <img className='headshot' src={headshot} alt='Brandon Symmers' />
+      </motion.div>
     </>
   )
 }
+
+About.propTypes = {
+  isMobile: PropTypes.bool
+}
+
 export default About
