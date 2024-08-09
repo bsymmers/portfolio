@@ -128,7 +128,9 @@ function ProjDesc({ proj }) {
         <div className='descBody'>
           {projPicker('leftDesc')}
           <div className='descText'>
-            <Text fontSize='4xl'>What did I do?</Text>
+            <Text fontSize='4xl' textAlign='center'>
+              What did I do?
+            </Text>
             {projPicker('descText')}
           </div>
         </div>

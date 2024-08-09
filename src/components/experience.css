@@ -15,8 +15,8 @@
 .experience-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 1%;
-    width: 100%;
+    width: 80%;
     flex-wrap: wrap;
 }
