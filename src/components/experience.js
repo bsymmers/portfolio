@@ -1,7 +1,8 @@
 import * as React from 'react'
 import './experience.css'
 import { Text } from '@chakra-ui/react'
-import ExperienceCard from './experience-card'
+import procurify from '../media/procurify.png'
+import philips from '../media/philips.png'
 import { motion } from 'framer-motion'
 
 function Experience() {
@@ -18,8 +19,10 @@ function Experience() {
           I&apos;ve had the opportunity to participate in 2 different full time internships, each being 8 months in duration
         </Text>
       </div>
-
-      <ExperienceCard />
+      <div className='experience-cards'>
+        <img className='experience-pics' src={procurify} alt='Procurify' />
+        <img className='experience-pics' src={philips} alt='Philips' />
+      </div>
     </motion.div>
   )
 }
