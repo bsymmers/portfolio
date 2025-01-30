@@ -27,20 +27,18 @@ function Nav() {
       </Heading>
       <Breadcrumb>
         <BreadcrumbItem>
-          <BreadcrumbLink as={Link} to='/'>
-            Home
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-
-        <BreadcrumbItem>
           <BreadcrumbLink as={Link} to='/tech'>
             Tech
           </BreadcrumbLink>
         </BreadcrumbItem>
-
         <BreadcrumbItem>
           <BreadcrumbLink as={Link} to='/film'>
             Film
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <BreadcrumbLink as={Link} to='https://github.com/bsymmers'>
+            <Icon as={FaGithub} display='inherit' />
           </BreadcrumbLink>
         </BreadcrumbItem>
 
@@ -70,9 +68,6 @@ function NavMobile() {
           <DrawerHeader fontSize='4xl'>Menu</DrawerHeader>
 
           <DrawerBody display='flex' flexDirection='column' justifyContent='center' alignItems='center'>
-            <Heading fontSize='4xl' as={Link} to='/'>
-              About
-            </Heading>
             <Heading fontSize='4xl' as={Link} to='/tech'>
               Tech
             </Heading>
@@ -82,7 +77,9 @@ function NavMobile() {
           </DrawerBody>
 
           <DrawerFooter justifyContent='center'>
-            <Icon as={FaGithub} boxSize={8} />
+            <a href='https://github.com/bsymmers'>
+              <Icon as={FaGithub} boxSize={8} />
+            </a>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

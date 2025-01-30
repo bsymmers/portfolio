@@ -1,7 +1,8 @@
 import * as React from 'react'
 import './App.css'
+import './components/about.css'
 import { Icon, Text } from '@chakra-ui/react'
-import About from './components/about'
+// import About from './components/about'
 import Film from './components/film'
 // import theme from './theme'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
@@ -14,7 +15,7 @@ function App() {
   const router = createHashRouter([
     {
       path: '/',
-      element: <About isMobile={isTabletOrMobile} />
+      element: <Tech isMobile={isTabletOrMobile} />
     },
     {
       path: '/film',
