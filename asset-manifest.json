@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fae17744.css",
-    "main.js": "/portfolio/static/js/main.a9cc9bac.js",
+    "main.css": "/portfolio/static/css/main.9f77d973.css",
+    "main.js": "/portfolio/static/js/main.bfd48533.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/IMG6.jpg": "/portfolio/static/media/IMG6.cad806f61446d4e65d5e.jpg",
     "static/media/headshot-tech.jpg": "/portfolio/static/media/headshot-tech.437c930898d61fe2406b.jpg",
-    "static/media/headshot.JPG": "/portfolio/static/media/headshot.50a4e2a615fd420c2448.JPG",
     "static/media/IMG7.jpg": "/portfolio/static/media/IMG7.2e5719a0af41d8e41917.jpg",
     "static/media/IMG12.jpg": "/portfolio/static/media/IMG12.791e4cb0ba487d42d718.jpg",
     "static/media/IMG13.jpg": "/portfolio/static/media/IMG13.0481d2dc5b2049f2f3cd.jpg",
@@ -53,29 +52,30 @@
     "static/media/IMG2.jpg": "/portfolio/static/media/IMG2.7d8b415b2e1e25bcd146.jpg",
     "static/media/IMG112.jpg": "/portfolio/static/media/IMG112.e17f2080ba5fa0519991.jpg",
     "static/media/IMG113.jpg": "/portfolio/static/media/IMG113.d6c543dd8e38933982b1.jpg",
+    "static/media/philips.png": "/portfolio/static/media/philips.49f9772b1f70d85fdf43.png",
     "static/media/ct-logo.png": "/portfolio/static/media/ct-logo.a131422fd6886f07f7fd.png",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.d9ba475b62bd57adf4d6.pdf",
     "static/media/Terrascan.png": "/portfolio/static/media/Terrascan.4ce51e910d493bc6d568.png",
     "static/media/ro-logo.png": "/portfolio/static/media/ro-logo.2121fa1a28612170fbb2.png",
     "static/media/t-logo.png": "/portfolio/static/media/t-logo.edd1e5aca331d2988e8a.png",
     "static/media/IMG114.jpg": "/portfolio/static/media/IMG114.3fa6b316e39383594179.jpg",
-    "static/media/cv.pdf": "/portfolio/static/media/cv.7013ad213376f773d933.pdf",
     "static/media/Cognate-Translator.png": "/portfolio/static/media/Cognate-Translator.fbb7af21c7006287823c.png",
     "static/media/dm-serif-display-latin-400-normal.woff2": "/portfolio/static/media/dm-serif-display-latin-400-normal.918b5997b79b6ebcb2c4.woff2",
     "static/media/dm-serif-display-latin-400-normal.woff": "/portfolio/static/media/dm-serif-display-latin-400-normal.ea5aa693a9b1a7f29da1.woff",
     "static/media/neuton-latin-400-normal.woff2": "/portfolio/static/media/neuton-latin-400-normal.e6246899e071397806fd.woff2",
     "static/media/neuton-latin-400-normal.woff": "/portfolio/static/media/neuton-latin-400-normal.d2979bc99e9014c7101c.woff",
-    "static/media/philips-logo.jpg": "/portfolio/static/media/philips-logo.93d0e03889bfe77434d0.jpg",
+    "static/media/procurify.png": "/portfolio/static/media/procurify.246a9dffb3a5de911b65.png",
     "static/media/dm-serif-display-latin-ext-400-normal.woff2": "/portfolio/static/media/dm-serif-display-latin-ext-400-normal.64b6e114c2d6d3522783.woff2",
     "static/media/dm-serif-display-latin-ext-400-normal.woff": "/portfolio/static/media/dm-serif-display-latin-ext-400-normal.6c1f83bd813cdaeb95dc.woff",
     "static/media/neuton-latin-ext-400-normal.woff2": "/portfolio/static/media/neuton-latin-ext-400-normal.dc554d8b9249a5e29384.woff2",
     "static/media/neuton-latin-ext-400-normal.woff": "/portfolio/static/media/neuton-latin-ext-400-normal.7dea0663a7b91c735834.woff",
     "index.html": "/portfolio/index.html",
-    "main.fae17744.css.map": "/portfolio/static/css/main.fae17744.css.map",
-    "main.a9cc9bac.js.map": "/portfolio/static/js/main.a9cc9bac.js.map",
+    "main.9f77d973.css.map": "/portfolio/static/css/main.9f77d973.css.map",
+    "main.bfd48533.js.map": "/portfolio/static/js/main.bfd48533.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fae17744.css",
-    "static/js/main.a9cc9bac.js"
+    "static/css/main.9f77d973.css",
+    "static/js/main.bfd48533.js"
   ]
 }
